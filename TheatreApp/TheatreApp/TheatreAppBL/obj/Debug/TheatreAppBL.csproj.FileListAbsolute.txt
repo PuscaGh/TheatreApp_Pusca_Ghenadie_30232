@@ -1,0 +1,9 @@
+C:\Users\Ghena\Documents\TheatreApp\TheatreApp\TheatreAppBL\bin\Debug\TheatreAppBL.dll
+C:\Users\Ghena\Documents\TheatreApp\TheatreApp\TheatreAppBL\bin\Debug\TheatreAppBL.pdb
+C:\Users\Ghena\Documents\TheatreApp\TheatreApp\TheatreAppBL\bin\Debug\Models.dll
+C:\Users\Ghena\Documents\TheatreApp\TheatreApp\TheatreAppBL\bin\Debug\TheatreAppDAL.dll
+C:\Users\Ghena\Documents\TheatreApp\TheatreApp\TheatreAppBL\bin\Debug\Models.pdb
+C:\Users\Ghena\Documents\TheatreApp\TheatreApp\TheatreAppBL\bin\Debug\TheatreAppDAL.pdb
+C:\Users\Ghena\Documents\TheatreApp\TheatreApp\TheatreAppBL\obj\Debug\TheatreAppBL.csprojResolveAssemblyReference.cache
+C:\Users\Ghena\Documents\TheatreApp\TheatreApp\TheatreAppBL\obj\Debug\TheatreAppBL.dll
+C:\Users\Ghena\Documents\TheatreApp\TheatreApp\TheatreAppBL\obj\Debug\TheatreAppBL.pdb

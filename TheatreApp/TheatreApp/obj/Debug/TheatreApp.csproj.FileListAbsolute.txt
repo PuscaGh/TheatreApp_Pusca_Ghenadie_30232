@@ -1,0 +1,17 @@
+C:\Users\Ghena\Documents\TheatreApp\TheatreApp\bin\Debug\TheatreApp.exe.config
+C:\Users\Ghena\Documents\TheatreApp\TheatreApp\bin\Debug\TheatreApp.exe
+C:\Users\Ghena\Documents\TheatreApp\TheatreApp\bin\Debug\TheatreApp.pdb
+C:\Users\Ghena\Documents\TheatreApp\TheatreApp\bin\Debug\Models.dll
+C:\Users\Ghena\Documents\TheatreApp\TheatreApp\bin\Debug\TheatreAppBL.dll
+C:\Users\Ghena\Documents\TheatreApp\TheatreApp\bin\Debug\TheatreAppDAL.dll
+C:\Users\Ghena\Documents\TheatreApp\TheatreApp\bin\Debug\Models.pdb
+C:\Users\Ghena\Documents\TheatreApp\TheatreApp\bin\Debug\TheatreAppBL.pdb
+C:\Users\Ghena\Documents\TheatreApp\TheatreApp\bin\Debug\TheatreAppDAL.pdb
+C:\Users\Ghena\Documents\TheatreApp\TheatreApp\obj\Debug\TheatreApp.csprojResolveAssemblyReference.cache
+C:\Users\Ghena\Documents\TheatreApp\TheatreApp\obj\Debug\TheatreApp.Login.resources
+C:\Users\Ghena\Documents\TheatreApp\TheatreApp\obj\Debug\TheatreApp.Properties.Resources.resources
+C:\Users\Ghena\Documents\TheatreApp\TheatreApp\obj\Debug\TheatreApp.UserForm.resources
+C:\Users\Ghena\Documents\TheatreApp\TheatreApp\obj\Debug\TheatreApp.csproj.GenerateResource.Cache
+C:\Users\Ghena\Documents\TheatreApp\TheatreApp\obj\Debug\TheatreApp.exe
+C:\Users\Ghena\Documents\TheatreApp\TheatreApp\obj\Debug\TheatreApp.pdb
+C:\Users\Ghena\Documents\TheatreApp\TheatreApp\obj\Debug\TheatreApp.AdminForm.resources
