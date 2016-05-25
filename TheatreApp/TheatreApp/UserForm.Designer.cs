@@ -32,6 +32,7 @@
             this.viewSpectaclesToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.addTicketToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.Logout = new System.Windows.Forms.Button();
+            this.exportTicketsToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.menuStrip1.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -49,6 +50,8 @@
             // 
             // viewSpectaclesToolStripMenuItem
             // 
+            this.viewSpectaclesToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.exportTicketsToolStripMenuItem});
             this.viewSpectaclesToolStripMenuItem.Name = "viewSpectaclesToolStripMenuItem";
             this.viewSpectaclesToolStripMenuItem.Size = new System.Drawing.Size(102, 20);
             this.viewSpectaclesToolStripMenuItem.Text = "View Spectacles";
@@ -71,6 +74,13 @@
             this.Logout.Text = "Logout";
             this.Logout.UseVisualStyleBackColor = false;
             this.Logout.Click += new System.EventHandler(this.Logout_Click);
+            // 
+            // exportTicketsToolStripMenuItem
+            // 
+            this.exportTicketsToolStripMenuItem.Name = "exportTicketsToolStripMenuItem";
+            this.exportTicketsToolStripMenuItem.Size = new System.Drawing.Size(152, 22);
+            this.exportTicketsToolStripMenuItem.Text = "Export tickets";
+            this.exportTicketsToolStripMenuItem.Click += new System.EventHandler(this.exportTicketsToolStripMenuItem_Click);
             // 
             // UserForm
             // 
@@ -96,5 +106,6 @@
         private System.Windows.Forms.ToolStripMenuItem viewSpectaclesToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem addTicketToolStripMenuItem;
         private System.Windows.Forms.Button Logout;
+        private System.Windows.Forms.ToolStripMenuItem exportTicketsToolStripMenuItem;
     }
 }

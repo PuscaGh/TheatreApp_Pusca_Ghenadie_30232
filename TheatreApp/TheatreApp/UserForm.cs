@@ -10,6 +10,7 @@ using System.Windows.Forms;
 using Models;
 using TheatreAppBL;
 using TheatreApp.Utils;
+using TheatreApp.Export;
 
 namespace TheatreApp
 {
@@ -18,6 +19,7 @@ namespace TheatreApp
         private TableContainer spectalesTable;
         private TableContainer ticketsTable;
         private DataEdit addTicket;
+        private DataEdit export;
         private UIView currentView;
 
         public UserForm()
@@ -28,7 +30,9 @@ namespace TheatreApp
             spectalesTable.StartEditRow += handlerTableEditRow;
             ticketsTable = new TableContainer();
             addTicket = new DataEdit();
+            export = new DataEdit();
             addTicket.FinishEdit += handleFinishEdit;
+            export.FinishEdit += handleFinishEdit;
         }
 
         private void handlerTableEditRow(object sender, System.Collections.Specialized.OrderedDictionary e)
@@ -42,6 +46,8 @@ namespace TheatreApp
                     MessageBox.Show("No tickets added for this spectacle");
                     return;
                 }
+
+               
                 if (currentView != null) currentView.dismissFromContainer();
                 ticketsTable.drawInForm(this);
                 ticketsTable.refreshWithData(tickets);
@@ -104,6 +110,18 @@ namespace TheatreApp
                     MessageBox.Show("Succes");
                 }
             }
+            else if (sender.Equals(this.export))
+            {
+                ExporterType type = (ExporterType)int.Parse(e["Export Type"].ToString());
+                Exporter exporter = ExportFactory.getExporter(type);
+                string spectacol = e[Constants.spectacolField].ToString();
+
+                Array tickets = TicketBL.getAllTicketsForSpectacle(spectacol).ToArray();
+
+                string path = e["File Path"].ToString();
+
+                exporter.exportTickets(tickets.OfType<Ticket>().ToList(), path);
+            }
         }
 
         private void Logout_Click(object sender, EventArgs e)
@@ -111,6 +129,19 @@ namespace TheatreApp
             this.Close();
             Login log = new Login();
             log.Show();
+        }
+
+        private void exportTicketsToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            if (currentView != null) currentView.dismissFromContainer();
+            Tuple<String, String> exportType = new Tuple<String, String>("Export Type", "");
+            Tuple<String, String> spectacol = new Tuple<String, String>(Constants.spectacolField, "");
+            Tuple<String, String> filePath = new Tuple<String, String>("File Path", "");
+            Array arr = new Tuple<String, String>[] { exportType, spectacol, filePath};
+
+            export.drawInForm(this);
+            export.refreshWithData(arr);
+            currentView = export;
         }
     }
 }

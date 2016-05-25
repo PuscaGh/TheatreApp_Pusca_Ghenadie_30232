@@ -53,6 +53,7 @@ namespace TheatreApp.Utils
 
         private void rowClicked(object sender, DataGridViewCellMouseEventArgs e)
         {
+            
             OrderedDictionary output = new OrderedDictionary();
 
             foreach (DataGridViewColumn column in this.table.Columns)

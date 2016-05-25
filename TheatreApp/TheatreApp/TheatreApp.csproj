@@ -35,6 +35,9 @@
     <Reference Include="Models">
       <HintPath>..\Models\bin\Debug\Models.dll</HintPath>
     </Reference>
+    <Reference Include="Newtonsoft.Json">
+      <HintPath>packages\Newtonsoft.Json.8.0.3\lib\net45\Newtonsoft.Json.dll</HintPath>
+    </Reference>
     <Reference Include="System" />
     <Reference Include="System.Core" />
     <Reference Include="System.Xml.Linq" />
@@ -56,6 +59,10 @@
     <Compile Include="AdminForm.Designer.cs">
       <DependentUpon>AdminForm.cs</DependentUpon>
     </Compile>
+    <Compile Include="Export\CsvExporter.cs" />
+    <Compile Include="Export\Exporter.cs" />
+    <Compile Include="Export\ExportFactory.cs" />
+    <Compile Include="Export\JsonExporter.cs" />
     <Compile Include="Login.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -70,6 +77,7 @@
     <Compile Include="UserForm.Designer.cs">
       <DependentUpon>UserForm.cs</DependentUpon>
     </Compile>
+    <Compile Include="Utils\CsvExport.cs" />
     <Compile Include="Utils\DataEdit.cs" />
     <Compile Include="Utils\TableContainer.cs" />
     <Compile Include="Utils\UIView.cs" />
@@ -91,6 +99,7 @@
     <EmbeddedResource Include="UserForm.resx">
       <DependentUpon>UserForm.cs</DependentUpon>
     </EmbeddedResource>
+    <None Include="packages.config" />
     <None Include="Properties\DataSources\Models.OperationResult+opResult.datasource" />
     <None Include="Properties\DataSources\Models.User+userRole.datasource" />
     <None Include="Properties\DataSources\Models.User.datasource" />
